@@ -1,0 +1,36 @@
+graph TD
+    root[C: Projetos ciencias-da-computacao]
+    
+    root --> .next[.next]
+    root --> mermaid[mermaid]
+    root --> node_modules[node_modules]
+    root --> public[public]
+    root --> src[src]
+
+    .next --> build[build]
+    .next --> cache[cache]
+    .next --> server[server]
+    .next --> static[static]
+    .next --> types[types]
+
+    server --> app[app]
+    server --> chunks[chunks]
+    server --> pages[pages]
+
+    app --> arquitetura[arquitetura]
+    app --> favicon[favicon.ico]
+    app --> formacao[formacao-socioemocional]
+    app --> intro[introducao-programacao]
+    app --> redes[redes]
+    app --> seguranca[seguranca]
+    app --> sistemas[sistemas-informacao]
+    app --> not_found[_not-found]
+
+    src --> app_src[app]
+    app_src --> arquitetura_src[arquitetura]
+    app_src --> fonts[fonts]
+    app_src --> formacao_src[formacao-socioemocional]
+    app_src --> intro_src[introducao-programacao]
+    app_src --> redes_src[redes]
+    app_src --> seguranca_src[seguranca]
+    app_src --> sistemas_src[sistemas-informacao]

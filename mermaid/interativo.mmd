@@ -1,0 +1,24 @@
+graph TD
+    root[Projetos: ciencias-da-computacao]
+
+    root --> src[[src: Código Principal]]
+    root --> public[[public: Recursos Estáticos]]
+    root --> config[[Arquivos de Configuração]]
+
+    src --> app[App: Módulo Principal]
+    src --> arquitetura[Arquitetura]
+    src --> seguranca[Segurança]
+    src --> redes[Redes]
+    src --> introducao[Introdução à Programação]
+    src --> formacao[Formação Socioemocional]
+    src --> sistemas[Sistemas de Informação]
+
+    config --> packageJSON[package.json: Dependências]
+    config --> readme[README.md]
+
+    %% Adicionando links interativos
+    click src "file:///C:/Projetos/ciencias-da-computacao/src" "Abrir pasta SRC"
+    click public "file:///C:/Projetos/ciencias-da-computacao/public" "Abrir pasta PUBLIC"
+    click config "file:///C:/Projetos/ciencias-da-computacao/package.json" "Ver Configurações"
+    click app "file:///C:/Projetos/ciencias-da-computacao/src/app" "Abrir pasta APP"
+    click readme "https://github.com/meu-projeto/README.md" "Abrir README no GitHub"

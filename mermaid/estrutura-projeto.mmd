@@ -1,0 +1,42 @@
+graph TD
+    root[Projetos: Ciencias da Computacao]
+
+    %% Diretórios principais
+    root --> git[.git: Controle de Versão]
+    root --> next[.next: Compilação do Next.js]
+    root --> mermaid[mermaid: Diagramas]
+    root --> node_modules[node_modules: Dependências]
+    root --> public[public: Recursos Estáticos]
+    root --> src[src: Código Principal]
+    root --> config[Configurações]
+
+    %% Arquivos de configuração
+    config --> eslint[.eslintrc.json]
+    config --> gitignore[.gitignore]
+    config --> nextConfig[next.config.ts]
+    config --> tailwind[tailwind.config.ts]
+    config --> packageJSON[package.json]
+    config --> readme[README.md]
+
+    %% Subdiretórios do código principal
+    src --> app[app: Módulo Principal]
+    src --> arquitetura[arquitetura]
+    src --> seguranca[segurança]
+    src --> redes[redes]
+    src --> introducao[introdução à programação]
+    src --> formacao[formação socioemocional]
+    src --> sistemas[sistemas de informação]
+
+    %% Links para GitHub
+    click git "https://github.com/dalmoneki/ciencias-da-computacao/tree/main/.git" "Abrir Controle de Versão no GitHub"
+    click next "https://github.com/dalmoneki/ciencias-da-computacao/tree/main/.next" "Abrir Compilação Next.js no GitHub"
+    click mermaid "https://github.com/dalmoneki/ciencias-da-computacao/tree/main/mermaid" "Abrir Diagramas no GitHub"
+    click node_modules "https://github.com/dalmoneki/ciencias-da-computacao/tree/main/node_modules" "Abrir Dependências no GitHub"
+    click public "https://github.com/dalmoneki/ciencias-da-computacao/tree/main/public" "Abrir Public no GitHub"
+    click src "https://github.com/dalmoneki/ciencias-da-computacao/tree/main/src" "Abrir SRC no GitHub"
+    click eslint "https://github.com/dalmoneki/ciencias-da-computacao/blob/main/.eslintrc.json" "Abrir ESLint no GitHub"
+    click gitignore "https://github.com/dalmoneki/ciencias-da-computacao/blob/main/.gitignore" "Abrir Git Ignore no GitHub"
+    click nextConfig "https://github.com/dalmoneki/ciencias-da-computacao/blob/main/next.config.ts" "Abrir Configuração Next.js no GitHub"
+    click tailwind "https://github.com/dalmoneki/ciencias-da-computacao/blob/main/tailwind.config.ts" "Abrir Tailwind no GitHub"
+    click packageJSON "https://github.com/dalmoneki/ciencias-da-computacao/blob/main/package.json" "Abrir Package JSON no GitHub"
+    click readme "https://github.com/dalmoneki/ciencias-da-computacao/blob/main/README.md" "Abrir README no GitHub"
