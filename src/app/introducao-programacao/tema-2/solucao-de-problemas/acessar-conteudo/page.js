@@ -2,27 +2,27 @@
 
 import { useRouter } from 'next/navigation';
 
-export default function AcessarConteudoPage() {
+export default function SolucaoDeProblemasPage() {
   const router = useRouter();
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-        <header className="bg-blue-700 text-white flex items-center py-4 px-6">
+        <header className="bg-blue-700 text-white flex items-center justify-between py-4 px-6">
           <button
             onClick={() => router.back()}
-            className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-4"
+            className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Voltar
           </button>
-          <h1 className="text-2xl font-bold text-center flex-1">
+          <h1 className="text-2xl font-bold flex-1 text-center">
             Tema 2: Solução de Problemas e Pensamento Computacional
           </h1>
         </header>
 
         <div className="p-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-900">1. Conceitos de Solução Estruturada</h2>
-          
+
           <h3 className="text-xl font-semibold text-gray-800 mb-4">Solução Estruturada</h3>
           <p className="text-gray-700 mb-6">
             Neste vídeo, vamos explorar a poderosa combinação entre a abordagem estruturada na programação e o raciocínio lógico. Aprenderemos como a solução estruturada nos auxilia a resolver problemas de maneira organizada e eficiente, enquanto o raciocínio lógico nos capacita a tomar decisões com base em condições e regras.
@@ -59,17 +59,16 @@ export default function AcessarConteudoPage() {
           </p>
         </div>
 
-        {/* Rodapé */}
         <footer className="py-4 px-6 flex justify-between items-center text-white bg-gray-800">
           <p className="text-sm">
             Feito com carinho por Dalmoneki e{" "}
             <span className="font-semibold">ChatGPT ❤️</span>
           </p>
           <button
-            onClick={() => router.push('/proximo-conteudo')}
+            onClick={() => router.push('/introducao-programacao/tema-2/solucao-de-problemas/acessar-conteudo/solucao-estruturada')}
             className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
-            Avançar
+            Acessar Conteúdo
           </button>
         </footer>
       </div>
